@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ShowsViewController.swift
 //  NCSS
 //
 //  Created by Edward Poon on 4/17/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ShowsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

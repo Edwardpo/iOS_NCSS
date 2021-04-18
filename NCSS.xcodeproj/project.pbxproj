@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		98DFECA2262BBED800C1E0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECA1262BBED800C1E0FC /* AppDelegate.swift */; };
 		98DFECA4262BBED800C1E0FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECA3262BBED800C1E0FC /* SceneDelegate.swift */; };
-		98DFECA6262BBED800C1E0FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECA5262BBED800C1E0FC /* ViewController.swift */; };
+		98DFECA6262BBED800C1E0FC /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECA5262BBED800C1E0FC /* ShowsViewController.swift */; };
 		98DFECA9262BBED800C1E0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DFECA7262BBED800C1E0FC /* Main.storyboard */; };
 		98DFECAB262BBED900C1E0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DFECAA262BBED900C1E0FC /* Assets.xcassets */; };
 		98DFECAE262BBED900C1E0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DFECAC262BBED900C1E0FC /* LaunchScreen.storyboard */; };
 		98DFECB9262BBED900C1E0FC /* NCSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECB8262BBED900C1E0FC /* NCSSTests.swift */; };
 		98DFECC4262BBED900C1E0FC /* NCSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECC3262BBED900C1E0FC /* NCSSUITests.swift */; };
+		98DFECDC262BC56800C1E0FC /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECDB262BC56800C1E0FC /* NetworkClient.swift */; };
+		98DFECE9262BC82100C1E0FC /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECE8262BC82100C1E0FC /* NetworkClientTests.swift */; };
+		98DFECFA262BCD5000C1E0FC /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECF9262BCD5000C1E0FC /* MockURLSession.swift */; };
+		98DFECFF262BCD7F00C1E0FC /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECFE262BCD7F00C1E0FC /* MockDataTask.swift */; };
+		98DFED04262BD00A00C1E0FC /* MockObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED03262BD00A00C1E0FC /* MockObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		98DFEC9E262BBED800C1E0FC /* NCSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DFECA1262BBED800C1E0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98DFECA3262BBED800C1E0FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98DFECA5262BBED800C1E0FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98DFECA5262BBED800C1E0FC /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
 		98DFECA8262BBED800C1E0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98DFECAA262BBED900C1E0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98DFECAD262BBED900C1E0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		98DFECBF262BBED900C1E0FC /* NCSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DFECC3262BBED900C1E0FC /* NCSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCSSUITests.swift; sourceTree = "<group>"; };
 		98DFECC5262BBED900C1E0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DFECDB262BC56800C1E0FC /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		98DFECE8262BC82100C1E0FC /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		98DFECF9262BCD5000C1E0FC /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		98DFECFE262BCD7F00C1E0FC /* MockDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
+		98DFED03262BD00A00C1E0FC /* MockObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,10 @@
 		98DFECA0262BBED800C1E0FC /* NCSS */ = {
 			isa = PBXGroup;
 			children = (
+				98DFECDA262BC55E00C1E0FC /* Network */,
 				98DFECA1262BBED800C1E0FC /* AppDelegate.swift */,
 				98DFECA3262BBED800C1E0FC /* SceneDelegate.swift */,
-				98DFECA5262BBED800C1E0FC /* ViewController.swift */,
+				98DFECA5262BBED800C1E0FC /* ShowsViewController.swift */,
 				98DFECA7262BBED800C1E0FC /* Main.storyboard */,
 				98DFECAA262BBED900C1E0FC /* Assets.xcassets */,
 				98DFECAC262BBED900C1E0FC /* LaunchScreen.storyboard */,
@@ -113,8 +124,10 @@
 		98DFECB7262BBED900C1E0FC /* NCSSTests */ = {
 			isa = PBXGroup;
 			children = (
+				98DFECED262BCCD900C1E0FC /* Mocks */,
 				98DFECB8262BBED900C1E0FC /* NCSSTests.swift */,
 				98DFECBA262BBED900C1E0FC /* Info.plist */,
+				98DFECE8262BC82100C1E0FC /* NetworkClientTests.swift */,
 			);
 			path = NCSSTests;
 			sourceTree = "<group>";
@@ -126,6 +139,24 @@
 				98DFECC5262BBED900C1E0FC /* Info.plist */,
 			);
 			path = NCSSUITests;
+			sourceTree = "<group>";
+		};
+		98DFECDA262BC55E00C1E0FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				98DFECDB262BC56800C1E0FC /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		98DFECED262BCCD900C1E0FC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				98DFECF9262BCD5000C1E0FC /* MockURLSession.swift */,
+				98DFECFE262BCD7F00C1E0FC /* MockDataTask.swift */,
+				98DFED03262BD00A00C1E0FC /* MockObject.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DFECA6262BBED800C1E0FC /* ViewController.swift in Sources */,
+				98DFECA6262BBED800C1E0FC /* ShowsViewController.swift in Sources */,
 				98DFECA2262BBED800C1E0FC /* AppDelegate.swift in Sources */,
 				98DFECA4262BBED800C1E0FC /* SceneDelegate.swift in Sources */,
+				98DFECDC262BC56800C1E0FC /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98DFED04262BD00A00C1E0FC /* MockObject.swift in Sources */,
+				98DFECFF262BCD7F00C1E0FC /* MockDataTask.swift in Sources */,
+				98DFECFA262BCD5000C1E0FC /* MockURLSession.swift in Sources */,
 				98DFECB9262BBED900C1E0FC /* NCSSTests.swift in Sources */,
+				98DFECE9262BC82100C1E0FC /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,15 +472,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JVBK5M258;
+				DEVELOPMENT_TEAM = 35RT7M93V5;
 				INFOPLIST_FILE = NCSS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.studioupstairs.NCSS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ncss.ncssapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,15 +493,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JVBK5M258;
+				DEVELOPMENT_TEAM = 35RT7M93V5;
 				INFOPLIST_FILE = NCSS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.studioupstairs.NCSS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ncss.ncssapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
