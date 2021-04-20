@@ -20,6 +20,11 @@
 		98DFECFA262BCD5000C1E0FC /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECF9262BCD5000C1E0FC /* MockURLSession.swift */; };
 		98DFECFF262BCD7F00C1E0FC /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFECFE262BCD7F00C1E0FC /* MockDataTask.swift */; };
 		98DFED04262BD00A00C1E0FC /* MockObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED03262BD00A00C1E0FC /* MockObject.swift */; };
+		98DFED11262CCF9300C1E0FC /* PlaylistClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED10262CCF9300C1E0FC /* PlaylistClientProtocol.swift */; };
+		98DFED16262CCFA900C1E0FC /* YouTubePlaylistClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED15262CCFA900C1E0FC /* YouTubePlaylistClient.swift */; };
+		98DFED1C262CD00200C1E0FC /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED1B262CD00200C1E0FC /* Playlist.swift */; };
+		98DFED29262CD21600C1E0FC /* PlaylistClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED28262CD21600C1E0FC /* PlaylistClientTests.swift */; };
+		98DFED33262E6A2D00C1E0FC /* YouTubeApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DFED32262E6A2D00C1E0FC /* YouTubeApiKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		98DFECF9262BCD5000C1E0FC /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		98DFECFE262BCD7F00C1E0FC /* MockDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
 		98DFED03262BD00A00C1E0FC /* MockObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObject.swift; sourceTree = "<group>"; };
+		98DFED10262CCF9300C1E0FC /* PlaylistClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistClientProtocol.swift; sourceTree = "<group>"; };
+		98DFED15262CCFA900C1E0FC /* YouTubePlaylistClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlaylistClient.swift; sourceTree = "<group>"; };
+		98DFED1B262CD00200C1E0FC /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		98DFED28262CD21600C1E0FC /* PlaylistClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistClientTests.swift; sourceTree = "<group>"; };
+		98DFED32262E6A2D00C1E0FC /* YouTubeApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeApiKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 		98DFECA0262BBED800C1E0FC /* NCSS */ = {
 			isa = PBXGroup;
 			children = (
+				98DFED1A262CCFF900C1E0FC /* Models */,
 				98DFECDA262BC55E00C1E0FC /* Network */,
 				98DFECA1262BBED800C1E0FC /* AppDelegate.swift */,
 				98DFECA3262BBED800C1E0FC /* SceneDelegate.swift */,
@@ -124,10 +135,10 @@
 		98DFECB7262BBED900C1E0FC /* NCSSTests */ = {
 			isa = PBXGroup;
 			children = (
+				98DFED2D262CD21B00C1E0FC /* Network */,
 				98DFECED262BCCD900C1E0FC /* Mocks */,
 				98DFECB8262BBED900C1E0FC /* NCSSTests.swift */,
 				98DFECBA262BBED900C1E0FC /* Info.plist */,
-				98DFECE8262BC82100C1E0FC /* NetworkClientTests.swift */,
 			);
 			path = NCSSTests;
 			sourceTree = "<group>";
@@ -144,7 +155,9 @@
 		98DFECDA262BC55E00C1E0FC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				98DFED31262E6A0A00C1E0FC /* YouTube */,
 				98DFECDB262BC56800C1E0FC /* NetworkClient.swift */,
+				98DFED10262CCF9300C1E0FC /* PlaylistClientProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -157,6 +170,32 @@
 				98DFED03262BD00A00C1E0FC /* MockObject.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		98DFED1A262CCFF900C1E0FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98DFED1B262CD00200C1E0FC /* Playlist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98DFED2D262CD21B00C1E0FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				98DFECE8262BC82100C1E0FC /* NetworkClientTests.swift */,
+				98DFED28262CD21600C1E0FC /* PlaylistClientTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		98DFED31262E6A0A00C1E0FC /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				98DFED15262CCFA900C1E0FC /* YouTubePlaylistClient.swift */,
+				98DFED32262E6A2D00C1E0FC /* YouTubeApiKey.swift */,
+			);
+			path = YouTube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +330,11 @@
 			files = (
 				98DFECA6262BBED800C1E0FC /* ShowsViewController.swift in Sources */,
 				98DFECA2262BBED800C1E0FC /* AppDelegate.swift in Sources */,
+				98DFED16262CCFA900C1E0FC /* YouTubePlaylistClient.swift in Sources */,
+				98DFED1C262CD00200C1E0FC /* Playlist.swift in Sources */,
 				98DFECA4262BBED800C1E0FC /* SceneDelegate.swift in Sources */,
+				98DFED11262CCF9300C1E0FC /* PlaylistClientProtocol.swift in Sources */,
+				98DFED33262E6A2D00C1E0FC /* YouTubeApiKey.swift in Sources */,
 				98DFECDC262BC56800C1E0FC /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +347,7 @@
 				98DFECFF262BCD7F00C1E0FC /* MockDataTask.swift in Sources */,
 				98DFECFA262BCD5000C1E0FC /* MockURLSession.swift in Sources */,
 				98DFECB9262BBED900C1E0FC /* NCSSTests.swift in Sources */,
+				98DFED29262CD21600C1E0FC /* PlaylistClientTests.swift in Sources */,
 				98DFECE9262BC82100C1E0FC /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

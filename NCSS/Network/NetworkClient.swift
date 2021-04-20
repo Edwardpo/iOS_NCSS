@@ -19,7 +19,11 @@ protocol NetworkClientProtocol {
 
 class NetworkClient: NetworkClientProtocol {
     
-    var session: URLSession = URLSession.shared
+    var session: URLSession
+    
+    init() {        
+        self.session = URLSession.shared
+    }
     
     func loadData(from url: URL, completionHandler:((NetworkResult<Data>) -> Void)?) {
         get(from: url) { (data, error) in
